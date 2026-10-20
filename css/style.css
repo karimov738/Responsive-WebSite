@@ -3,6 +3,10 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    
 }
 * {
     box-sizing: border-box;
@@ -16,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-li{
+ul{
     list-style-type: none;
 }
 
@@ -77,12 +81,12 @@ img{
 }
 
 .showcase p{
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .showcase .grid{
     overflow: visible;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 55% auto;
     gap: 30px;
 }
 
@@ -145,4 +149,20 @@ img{
 .stats .grid p{
     font-size: 20px;
     font-weight: bold;
+}
+
+/* Cli */
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
 }
