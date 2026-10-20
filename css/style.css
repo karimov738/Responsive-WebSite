@@ -185,3 +185,11 @@ img{
     transform: translateY(-15px);
 }
 
+/* Tablets and under */
+@media(max-width: 768px){
+    
+}
+@media(max-width: 500px){
+
+}
+
